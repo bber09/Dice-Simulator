@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dice Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Dice Simulator 🎲</h1>
+    <div id="result">Roll Result: -</div>
+    <button onclick="rollDice()">Roll Once</button>
+    <button onclick="rollFiveTimes()">Roll 5 Times</button>
+    <h2>Roll History</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Roll Number</th>
+                <th>Value</th>
+            </tr>
+        </thead>
+        <tbody id="history"></tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
