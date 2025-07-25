@@ -1,29 +1,37 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Dice Simulator</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Dice Simulator 🎲</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Add Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <h1>Dice Simulator 🎲</h1>
-    <div id="result">Roll Result: -</div>
-    <div id="twoCount">Number of Twos: -</div>
-    <div id="totalRolls">Total Rolls: -</div>
-    <div id="frequency">Relative Frequency of Twos: -</div>
-    <button onclick="rollDice()">Roll Once</button>
-    <button onclick="rollFiveTimes()">Roll 5 Times</button>
+  <h1>Dice Simulator 🎲</h1>
+  <div id="result">Roll Result: -</div>
+  <div id="twoCount">Number of Twos: -</div>
+  <div id="totalRolls">Total Rolls: -</div>
+  <div id="frequency">Relative Frequency of Twos: -</div>
+  <button onclick="rollDice()">Roll Once</button>
+  <button onclick="rollFiveTimes()">Roll 5 Times</button>
 
-    <h2>Roll History</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Roll Number</th>
-                <th>Value</th>
-            </tr>
-        </thead>
-        <tbody id="history"></tbody>
-    </table>
-    <script src="script.js"></script>
+  <h2>Roll History</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Roll Number</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody id="history"></tbody>
+  </table>
+
+  <!-- Canvas for the cumulative graph -->
+  <h2>Cumulative Relative Frequency</h2>
+  <canvas id="frequencyChart" width="600" height="300"></canvas>
+
+  <script src="script.js"></script>
 </body>
 </html>
